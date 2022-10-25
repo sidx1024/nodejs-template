@@ -38,6 +38,7 @@
     "jsdoc"
   ],
   "devDependencies": {
+    "nodemon": "^2.0.20",
     "eslint": "^8.26.0",
     "husky": "^4.3.8",
     "lint-staged": "^13.0.3",
@@ -58,7 +59,5 @@
       "prettier --write"
     ]
   },
-  "dependencies": {
-    "nodemon": "^2.0.20"
-  }
+  "dependencies": {}
 }
