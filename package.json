@@ -1,0 +1,64 @@
+{
+  "name": "@sidx1024/nodejs-template",
+  "version": "1.0.0",
+  "description": "A basic node.js template with eslint, prettier, uvu and type-checking with jsdoc annotations",
+  "main": "./src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon",
+    "preinstall": "node bin/check-nvmrc.js",
+    "prestart": "node bin/check-nvmrc.js",
+    "test": "uvu tests",
+    "prepublishOnly": "tsc && npm test"
+  },
+  "engines": {
+    "node": ">=16.9.0"
+  },
+  "imports": {
+    "#utils/*": "./src/utils/*"
+  },
+  "engineStrict": true,
+  "types": "types/index.d.ts",
+  "author": "sidx1024",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sidx1024/nodejs-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sidx1024/find-react-legacy-context-usages/issues"
+  },
+  "homepage": "https://github.com/sidx1024/find-react-legacy-context-usages#readme",
+  "keywords": [
+    "node",
+    "node.js",
+    "eslint",
+    "prettier",
+    "uvu",
+    "jsdoc"
+  ],
+  "devDependencies": {
+    "eslint": "^8.26.0",
+    "husky": "^4.3.8",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4",
+    "uvu": "^0.5.6"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js}": [
+      "eslint --fix"
+    ],
+    "**/*.{js,json}": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
