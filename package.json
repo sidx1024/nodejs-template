@@ -26,9 +26,9 @@
     "url": "git+https://github.com/sidx1024/nodejs-template.git"
   },
   "bugs": {
-    "url": "https://github.com/sidx1024/find-react-legacy-context-usages/issues"
+    "url": "https://github.com/sidx1024/nodejs-template/issues"
   },
-  "homepage": "https://github.com/sidx1024/find-react-legacy-context-usages#readme",
+  "homepage": "https://github.com/sidx1024/nodejs-template#readme",
   "keywords": [
     "node",
     "node.js",
